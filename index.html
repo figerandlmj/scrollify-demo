@@ -106,6 +106,16 @@
 					<p class="p1">关于我们</p>
 					<p>ABOUT&nbsp;&nbsp;US</p>
 				</div>
+				<div class="fr fr2">
+					<p>
+						<img src="images/panel4_qq.png" alt=""/>
+						<label>2246017044</label>
+					</p>
+					<p>
+						<img src="images/panel4_qq.png" alt=""/>
+						<label>3436749927</label>
+					</p>
+				</div>
 				<div class="fr">
 					<p>
 						<img src="images/panel4_icon1.png" alt=""/>
@@ -156,11 +166,18 @@
 		$.scrollify({
 			section: '.panel'
 		});
+		if (getScrollTop() >= $(window).height()) { 
+        	$(".panel1-banner").slideUp();
+            $(".fix-part").slideDown();
+        }else{ 
+            $(".fix-part").slideUp();
+            $(".panel1-banner").slideDown();
+        }
 		window.onscroll = function () { 
-	        if (getScrollTop() == $(window).height()) { 
-	        	$(".panel1-banner").slideUp();
+	        if (getScrollTop() >= $(window).height()) { 
+        	$(".panel1-banner").slideUp();
 	            $(".fix-part").slideDown();
-	        }else if (getScrollTop() == 0) { 
+	        }else{ 
 	            $(".fix-part").slideUp();
 	            $(".panel1-banner").slideDown();
 	        }
@@ -189,7 +206,7 @@
 			i++;
 			var num=i%3;
 			$(".panel3 .imgs img").eq(num).show().siblings().hide();
-		},2000)
+		},3000)
 
 	});
 	</script>
