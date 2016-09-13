@@ -1,0 +1,276 @@
+*{
+	padding:0;
+	margin:0;
+	font-family: "Microsoft Yahei";
+}
+body{
+	background: #fff;
+}
+ul,li{ 
+	list-style: none;
+	list-style-type:none;
+}
+img,input{
+	border:0;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.container{
+	width:1000px;
+	height:100%;
+	margin:0 auto;
+	position: relative;
+}
+.banner{
+	width: 100%;
+	height: 104px;
+	background: #E6E3E3;
+	position: absolute;
+	bottom: 0;
+}
+.banner ul{
+	width:1000px;
+	height:100%;
+	margin:0 auto;
+}
+.banner li{
+	float:left;
+	width: 330px;
+	height:74px;
+	text-align: center;
+	cursor: pointer;
+}
+.banner li a{
+	font-size: 16px;
+	color: #646464;
+}
+.banner li img{
+	display: block;
+	margin:0 auto;
+	margin-top:10px;
+	position:relative;
+}
+.banner li:nth-child(1) img{
+	margin-top:16px;
+}
+.banner li:nth-child(3) img{
+	margin-top:18px;
+}
+.banner li label{
+	display: inline-block;
+	margin-top:10px;
+}
+.fix-part{
+	display: none;
+	position: fixed;
+	top:0;
+}
+.panel1{
+	width:100%;
+	min-height:720px;
+	height:auto;
+	background: url(../images/panel1_bg.png) center repeat;
+	background-size:100% 100%; 
+	position: relative;
+}
+.panel1 .top img{
+	margin-top:20px;
+}
+.panel1 .top li{
+	float:left;
+	width:110px;
+	height:80px;
+	line-height: 100px;
+	text-align: center;
+	margin-left:1px;
+}
+.panel1 .top li a{
+	display: inline-block;
+	width:110px;
+	height:80px;
+	font-size: 18px;
+	color: #fff;
+}
+.panel1 .top li.hover{
+	background-color: #69b834;
+}
+.panel1 .top li:hover{
+	background-color: #69b834;
+}
+.panel1 .bottom{
+	position: absolute;
+	bottom:104px;
+	right:0;
+}
+.panel1 .bottom p:nth-child(1){
+	font-size: 24px;
+	color: #fff;
+}
+.panel1 .bottom p:nth-child(2){
+	font-size: 30px;
+	color: #efbf00;
+	margin:20px 200px 0px 100px;
+}
+.panel2 .container,.panel3 .container,.panel4 .container{
+	position: relative;
+	top: 154px;
+}
+.panel2 p,.panel3 p,.panel4 p{
+	text-align: center;
+}
+.panel12 p:nth-child(1),.panel13 p:nth-child(1),.panel14 p:nth-child(1){
+	font-size: 22px;
+	color: #535353;
+}
+.panel2 p:nth-child(2),.panel3 p:nth-child(2),.panel4 p:nth-child(2){
+	font-size: 16px;
+	color: #797777;
+	margin-top:20px;
+}
+.panel2 .bottom,.panel3 .bottom{
+	position: absolute;
+	bottom:200px;
+	right:0;
+	left:0;
+}
+.panel2 .imgs{
+	position:relative;
+	top:100px;
+}
+.panel2 .imgs .img1{
+	position: absolute;
+	z-index: 1;
+}
+.panel2 .imgs .img2{
+	position: absolute;
+	z-index: 2;
+	left:90px;
+	top:45px;
+}
+.panel2 .imgs .img3{
+	position: absolute;
+	z-index: 3;
+	left:110px;
+	top:30px;
+}
+.panel3{
+	background-color: #f0f0f0;
+}
+.panel3 img.fl{
+	margin:60px 0px 0px 80px;
+}
+.panel3 .imgs{
+	width:242px;
+	height:414px;
+	position:relative;
+	background: url("../images/panel3_2.png") center no-repeat;
+	background-size: 242px 414px;
+	margin-left:90px;
+}
+.panel3 .imgs .img1{
+	position: absolute;
+	top:55px;
+	left:45px;
+}
+.panel3 .fl .img2{
+	position: absolute;
+	z-index: 2;
+	top:200px;
+}
+.panel4{
+	text-align: center;
+	position:relative;
+}
+.panel4 .imgs{
+	margin-top:50px;
+}
+.partner{
+	width: 100%;
+	height:90px;
+	background-color: #f0f0f0;
+	position:absolute;
+	bottom:140px;
+}
+.partner .con{
+	width:800px;
+	height:90px;
+	margin:0 auto;
+	margin-top:10px;
+	position: relative;
+}
+.partner ul{
+	position: absolute;;
+	left:120px;
+}
+.partner li{
+	float:left;
+	width:170px;
+	margin-top:6px;
+}
+.partner .title{
+	font-size: 18px;
+	color: #727272;
+	margin-top:20px;
+}
+.about-us{
+	width: 100%;
+	height:140px;
+	background-color: #69b834;
+	position:absolute;
+	bottom:0px;
+}
+.about-us .con{
+	width:640px;
+	margin:0 auto;
+	position: relative;
+}
+.about-us .fl p{
+	font-size: 20px;
+	color: #89d15a;
+	font-weight: bold;
+}
+.about-us .fl .p1{
+	font-size: 28px;
+	color: #fff;
+	margin-top:30px;
+}
+.about-us .fr{
+	margin-top:16px;
+}
+.about-us .fr p{
+	font-size: 16px;
+	color: #b4f587;
+	line-height: 24px;
+	margin-left:8px;
+}
+.about-us .fr p:after{
+	display:block;
+  	clear:both;
+  	content:"";
+  	visibility:hidden;
+  	height:0;
+  	font-size:0; 
+	line-height:0;
+}
+.about-us .fr p label{
+	float: left;
+}
+.about-us .fr p img{
+	position:relative;
+	float:left;
+	margin:0px 10px 0px 0px;
+}
+.about-us .fr p:nth-child(3){
+	margin-top:14px;
+	margin-left:0px;
+}
