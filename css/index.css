@@ -326,11 +326,11 @@ a:hover{
 	    height:144px;
 	    background-size:500px 144px;
 	}
-	
+
 	.panel2 .imgs .img2 {
 	    position: absolute;
 	    z-index: 2;
 	    left: 90px;
-	    top: 40px;
+	    top: 35px;
 	}
 }
