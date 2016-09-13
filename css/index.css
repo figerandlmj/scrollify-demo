@@ -54,16 +54,26 @@ a:hover{
 	font-size: 16px;
 	color: #646464;
 }
-.banner li img{
+.banner li span{
 	display: block;
+	background: url("../images/common.png") no-repeat;
+	width:38px;
+	height:48px;
+	background-position:-11px -15px;
 	margin:0 auto;
-	margin-top:10px;
+	margin-top:16px;
 	position:relative;
 }
-.banner li:nth-child(1) img{
-	margin-top:16px;
+.banner li:nth-child(2) span{
+	width:52px;
+	height:55px;
+	background-position:-65px -10px;
+	margin-top:10px;
 }
-.banner li:nth-child(3) img{
+.banner li:nth-child(3) span{
+	width:51px;
+	height:49px;
+	background-position:-130px -13px;
 	margin-top:18px;
 }
 .banner li label{
@@ -112,6 +122,48 @@ a:hover{
 	bottom:104px;
 	right:0;
 }
+/*.panel1 .bottom .fl{
+	position: relative;
+    bottom: 400px;
+    right: 200px;
+}*/
+.panel1 .bottom .fl {
+   	position: relative;
+    bottom: 400px;
+    right: 200px;
+    -webkit-animation-name: word;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration: 1;
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-name: word;
+    -moz-animation-duration: 50s;
+    -moz-animation-iteration: 1;
+    -moz-animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes word {
+    0% {
+        bottom: 400px;
+    	right: 200px;
+    }
+
+    100% {
+        bottom: 0px;
+    	right: 0px;
+    }
+}
+
+@-moz-keyframes word {
+    0% {
+        bottom: 0px;
+    	right: 0px;
+    }
+
+    100% {
+        bottom: 0px;
+    	right: 0px;
+    }
+}
 .panel1 .bottom p:nth-child(1){
 	font-size: 24px;
 	color: #fff;
@@ -139,7 +191,7 @@ a:hover{
 }
 .panel2 .bottom,.panel3 .bottom{
 	position: absolute;
-	bottom:200px;
+	top:160px;
 	right:0;
 	left:0;
 }
@@ -158,6 +210,10 @@ a:hover{
 	top:45px;
 }
 .panel2 .imgs .img3{
+	background: url("../images/common.png") no-repeat;
+	width:62px;
+	height:62px;
+	background-position:-195px -6px;
 	position: absolute;
 	z-index: 3;
 	left:110px;
@@ -183,6 +239,10 @@ a:hover{
 	left:45px;
 }
 .panel3 .fl .img2{
+	background: url("../images/common.png") no-repeat;
+	width:150px;
+	height:193px;
+	background-position:-14px -186px;
 	position: absolute;
 	z-index: 2;
 	top:200px;
@@ -217,6 +277,38 @@ a:hover{
 	width:170px;
 	margin-top:6px;
 }
+.partner li span{
+	display: block;
+	background: url("../images/common.png") no-repeat;
+	width:143px;
+	height:32px;
+	background-position:-8px -79px;
+}
+.partner li:nth-child(2) span{
+	width:80px;
+	height:32px;
+	background-position:-162px -75px;
+}
+.partner li:nth-child(3) span{
+	width:88px;
+	height:32px;
+	background-position:-253px -79px;
+}
+.partner li:nth-child(4) span{
+	width:88px;
+	height:32px;
+	background-position:-356px -80px;
+}
+.partner li:nth-child(5) span{
+	width:88px;
+	height:32px;
+	background-position:-12px -131px;
+}
+.partner li:nth-child(6) span{
+	width:88px;
+	height:32px;
+	background-position:-115px -133px;
+}
 .partner .title{
 	font-size: 18px;
 	color: #727272;
@@ -245,13 +337,14 @@ a:hover{
 	margin-top:30px;
 }
 .about-us .fr{
-	margin-top:16px;
+	margin-top:4px;
 }
 .about-us .fr p{
 	font-size: 16px;
 	color: #b4f587;
-	line-height: 24px;
+	line-height: 34px;
 	margin-left:8px;
+	margin-top: 8px;
 }
 .about-us .fr p:after{
 	display:block;
@@ -265,18 +358,46 @@ a:hover{
 .about-us .fr p label{
 	float: left;
 }
-.about-us .fr p img{
+.about-us .fr p span{
+	display: inline-block;
+	background: url("../images/common.png") no-repeat;
+	width:35px;
+	height:30px;
+	background-position:-233px -131px;
 	position:relative;
 	float:left;
 	margin:0px 10px 0px 0px;
 }
+.about-us .fr p:nth-child(2) span{
+	width:34px;
+	height:34px;
+	background-position:-279px -132px;
+}
+.about-us .fr p:nth-child(3) span{
+	width:37px;
+	height:34px;
+	background-position:-322px -130px;
+}
 .about-us .fr p:nth-child(3){
-	margin-top:14px;
-	margin-left:0px;
+	margin-top:8px;
+	margin-left:6px;
 }
 .about-us .fr2{
 	margin-left:30px;
-	margin-top:20px;
+	margin-top:12px;
+}
+.about-us .fr2 p{
+	cursor: pointer;
+}
+.about-us .fr2 p span{
+	width:48px;
+	height:48px;
+	background-position:-376px -123px;
+}
+.about-us .fr2 p:nth-child(2) span{
+	width:48px;
+	height:48px;
+	background-position:-376px -123px;
 }
 .about-us .fr2 label{
 	display:inline-block;
@@ -285,7 +406,7 @@ a:hover{
 @media screen and (max-height: 800px) {
 	.panel2 .bottom,.panel3 .bottom{
 		position: absolute;
-		bottom:170px;
+		top:100px;
 		right:0;
 		left:0;
 	}
@@ -308,7 +429,7 @@ a:hover{
 @media screen and (max-height: 650px) {
 	.panel2 .bottom,.panel3 .bottom{
 		position: absolute;
-		bottom:120px;
+		top:60px;
 		right:0;
 		left:0;
 	}
