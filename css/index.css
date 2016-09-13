@@ -282,16 +282,16 @@ a:hover{
 	display:inline-block;
 	margin-top:10px;
 }
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 800px) {
 	.panel2 .bottom,.panel3 .bottom{
 		position: absolute;
-		bottom:160px;
+		bottom:170px;
 		right:0;
 		left:0;
 	}
 	.panel2 .imgs{
 		position:relative;
-		top:20px;
+		top:30px;
 	}
 	.panel2 .bottom img.fr{
 		width: 250px;
@@ -299,9 +299,38 @@ a:hover{
 	    background-size: 250px 400px;
 	}
 	.panel4 .imgs {
-	    margin-top: 50px;
+	    margin-top: 20px;
+	    width:500px;
+	    height:180px;
+	    background-size:500px 180px;
+	}
+}
+@media screen and (max-height: 650px) {
+	.panel2 .bottom,.panel3 .bottom{
+		position: absolute;
+		bottom:120px;
+		right:0;
+		left:0;
+	}
+	.panel2 .imgs{
+		position:relative;
+		top:20px;
+	}
+	.panel2 .container, .panel3 .container, .panel4 .container {
+	    position: relative;
+	    top: 114px;
+	}
+	.panel4 .imgs {
+	    margin-top: 20px;
 	    width:500px;
 	    height:144px;
 	    background-size:500px 144px;
+	}
+	
+	.panel2 .imgs .img2 {
+	    position: absolute;
+	    z-index: 2;
+	    left: 90px;
+	    top: 40px;
 	}
 }
