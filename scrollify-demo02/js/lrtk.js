@@ -57,7 +57,7 @@ function startMove(obj,att,add)
 		   }
 	   }
 	   
-	},30)
+	},90)
 }
 
   window.onload = function()
